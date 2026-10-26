@@ -562,11 +562,16 @@ blockquote cite {
   font-size: inherit;
   line-height: inherit;
 }
-.meridiem {
-  font-size: 0.58em;
-  letter-spacing: 0.04em;
-  margin-left: 0.14em;
-  vertical-align: 0.32em;
+.day-list time .meridiem,
+.time-line .meridiem {
+  display: inline;
+  margin: 0 0 0 0.08em;
+  color: inherit;
+  font-size: 0.45em;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  vertical-align: 0.7em;
 }
 .time-line {
   white-space: nowrap;
