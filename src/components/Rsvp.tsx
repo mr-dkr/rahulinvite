@@ -64,12 +64,9 @@ function nameError(value: string) {
 }
 
 function phoneError(value: string, strict: boolean) {
-  const trimmed = value.trim()
-  if (!trimmed) return strict ? 'Please enter a phone number.' : ''
-  const digits = trimmed.replace(/\D/g, '')
-  const shaped = /^\+?[\d\s()-]+$/.test(trimmed)
-  if (!shaped || digits.length > 15) return 'Enter a phone number with 8 to 15 digits.'
-  if (digits.length < 8) return strict ? 'Enter a phone number with 8 to 15 digits.' : ''
+  const digits = value.replace(/\D/g, '')
+  if (!digits) return strict ? 'Please enter a phone number.' : ''
+  if (digits.length !== 10) return strict ? 'Enter a 10-digit phone number.' : ''
   return ''
 }
 
@@ -82,7 +79,6 @@ function sheetName(input: {
   const coming = input.attendance === 'yes'
   const parts = [
     input.name,
-    'Rahul & Jovial',
     coming ? `Yes, ${input.guests}` : 'No',
   ]
   if (input.note) parts.push(input.note)
@@ -188,11 +184,14 @@ export function Rsvp() {
             Phone number
             <input
               value={phone}
-              onChange={(event) => setPhone(event.target.value)}
+              onChange={(event) =>
+                setPhone(event.target.value.replace(/\D/g, '').slice(0, 10))
+              }
               onBlur={() => setPhoneBlurred(true)}
               name="guest-phone"
               type="tel"
-              inputMode="tel"
+              inputMode="numeric"
+              maxLength={10}
               autoComplete="off"
               aria-invalid={Boolean(phoneMessage)}
               aria-describedby={phoneMessage ? 'phone-error' : undefined}
