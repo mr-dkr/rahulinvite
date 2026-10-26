@@ -224,16 +224,20 @@ export function Invitation() {
       <header className="hero">
         <GardenBackdrop />
         <div className="hero-card">
-          <PhotoButton
-            photo={photos.stairs}
-            className="hero-frame"
-            onOpen={setActive}
-          />
+          <div className="hero-portrait">
+            <PhotoButton
+              photo={photos.stairs}
+              className="hero-frame"
+              onOpen={setActive}
+            />
+            <div className="hero-names">
+              <p className="kicker">Together with their families</p>
+              <p className="hero-name">{site.couple.groom}</p>
+              <p className="amp">&</p>
+              <p className="hero-name">{site.couple.bride}</p>
+            </div>
+          </div>
           <div className="hero-copy">
-            <p className="kicker">Together with their families</p>
-            <p className="hero-name">{site.couple.groom}</p>
-            <p className="amp">&</p>
-            <p className="hero-name">{site.couple.bride}</p>
             <p className="ml" lang="ml">
               രാഹുൽ ഷാജിയുടെയും ജോവിയൽ റോസിന്റെയും വിവാഹത്തിലേക്ക്
               സ്നേഹപൂർവ്വം ക്ഷണിക്കുന്നു

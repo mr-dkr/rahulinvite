@@ -384,6 +384,7 @@ button { cursor: pointer; }
   align-items: center;
 }
 .hero-copy { text-align: center; }
+.hero-names { text-align: center; }
 .hero-name {
   margin: 0;
   font-family: "Cormorant Garamond", Georgia, serif;
@@ -902,6 +903,32 @@ legend { font-weight: 600; margin-bottom: 8px; }
 }
 .countdown-band .ghost-button { margin-top: 22px; }
 
+.hero-portrait { position: relative; }
+@media (max-width: 859px) {
+  .hero { padding: 18px 16px 20px; }
+  .hero-frame { width: 100%; }
+  .hero-names {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    width: min(88%, 340px);
+    transform: translate(-50%, -50%);
+    padding: 16px 12px 18px;
+    text-align: center;
+    pointer-events: none;
+    color: #f6f1e7;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55);
+    background: radial-gradient(ellipse at center, rgba(7, 22, 18, 0.62), rgba(7, 22, 18, 0.28) 62%, transparent 78%);
+  }
+  .hero-names .kicker {
+    color: var(--gold-soft);
+    letter-spacing: 0.16em;
+    font-size: 0.62rem;
+  }
+  .hero-names .amp { color: var(--gold-soft); }
+  .hero-names .hero-name { font-size: clamp(2.4rem, 11vw, 3.4rem); }
+}
 @media (max-width: 700px) {
   .envelope-screen { padding: 18px 16px 16px; }
   .envelope-frame { inset: 10px; }
@@ -913,7 +940,24 @@ legend { font-weight: 600; margin-bottom: 8px; }
 @media (min-width: 860px) {
   .section { padding: 64px 0; }
   .hero-card { grid-template-columns: minmax(280px, 420px) 1fr; gap: 64px; }
-  .hero-copy { text-align: left; }
+  .hero-portrait { display: contents; }
+  .hero-frame { grid-column: 1; grid-row: 1 / span 2; }
+  .hero-names {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    position: static;
+    width: auto;
+    padding: 0;
+    transform: none;
+    background: none;
+    text-align: left;
+    text-shadow: none;
+    pointer-events: auto;
+    color: inherit;
+  }
+  .hero-copy { grid-column: 2; grid-row: 2; align-self: start; text-align: left; }
+  .hero-names .amp { color: var(--wine); }
   .hero .ml { margin-left: 0; }
   .countdown { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .split { grid-template-columns: 0.86fr 1.14fr; gap: 56px; }
