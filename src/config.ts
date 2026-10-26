@@ -25,20 +25,18 @@ export const site = {
     {
       time: '6:30 PM – 9:30 PM',
       title: 'Wedding',
-      detail: 'Jacobs Entertainments',
+      detail: "Jacob's Convention Centre",
     },
   ],
   church: {
     name: "St. Sebastian's Forane Church",
-    malayalamPlace: 'തൊടുപുഴ',
     address: 'Thodupuzha, Kerala 685 584',
     latitude: 9.895138,
     longitude: 76.70833,
   },
   reception: {
-    name: 'Jacobs Entertainments',
-    detail: 'Convention Center & Health Park',
-    malayalamPlace: 'മുവാറ്റുപുഴ',
+    name: "Jacob's Convention Centre",
+    detail: 'Pandappilly, Muvattupuzha',
     address: 'Pandappilly, Muvattupuzha, Kerala 686672',
     latitude: 9.911845,
     longitude: 76.592092,

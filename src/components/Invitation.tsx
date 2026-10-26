@@ -238,10 +238,6 @@ export function Invitation() {
             </div>
           </div>
           <div className="hero-copy">
-            <p className="ml" lang="ml">
-              രാഹുൽ ഷാജിയുടെയും ജോവിയൽ റോസിന്റെയും വിവാഹത്തിലേക്ക്
-              സ്നേഹപൂർവ്വം ക്ഷണിക്കുന്നു
-            </p>
             {dateLabel && <p className="date-line">{dateLabel}</p>}
           </div>
         </div>
@@ -296,9 +292,6 @@ export function Invitation() {
           <Tilt className="venue-card">
             <p className="kicker">Holy Matrimony</p>
             <h2>The vows</h2>
-            <p className="ml" lang="ml">
-              വിവാഹ കൂദാശ · {site.church.malayalamPlace}
-            </p>
             <h3>{site.church.name}</h3>
             <p className="time-line">{site.wedding.churchTime}</p>
             <p className="time-note">Church</p>
@@ -348,17 +341,14 @@ export function Invitation() {
           <Tilt className="venue-card">
             <p className="kicker">Reception</p>
             <h2>The celebration</h2>
-            <p className="ml" lang="ml">
-              സ്വീകരണം · {site.reception.malayalamPlace}
-            </p>
             <h3>{site.reception.name}</h3>
             <p className="place-detail">{site.reception.detail}</p>
             <p className="time-line">{site.wedding.receptionTime}</p>
             <p className="time-note">Wedding</p>
             <address>{site.reception.address}</address>
             <p>
-              After the church blessing, the celebration continues among the
-              gardens at Jacobs in Pandappilly.
+              After the church blessing, the celebration continues at
+              Jacob's Convention Centre in Pandappilly.
             </p>
             <div className="venue-actions">
               <a
@@ -387,7 +377,7 @@ export function Invitation() {
             {openMap === 'reception' && (
               <iframe
                 className="map"
-                title="Map of Jacobs Entertainments, Pandappilly"
+                title="Map of Jacob's Convention Centre, Pandappilly"
                 src={mapsEmbed(site.reception.latitude, site.reception.longitude)}
                 loading="lazy"
               />

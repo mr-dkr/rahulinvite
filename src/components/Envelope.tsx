@@ -83,9 +83,6 @@ export function Envelope({ opening, onOpen }: EnvelopeProps) {
       <h1 className="env-names">
         Rahul <em>&</em> Jovial
       </h1>
-      <p className="env-ml" lang="ml">
-        സ്നേഹപൂർവ്വം ക്ഷണിക്കുന്നു
-      </p>
       <p className="env-date">{site.wedding.dateDisplay}</p>
       {opening && <span className="open-burst" aria-hidden="true" />}
 

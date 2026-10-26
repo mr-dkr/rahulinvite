@@ -12,7 +12,7 @@
   --scroll: 0;
   color: var(--ink);
   background: var(--ivory);
-  font-family: Manrope, "Segoe UI", sans-serif;
+  font-family: "Cormorant Garamond", Georgia, serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -21,6 +21,7 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
+  font-size: 1.125rem;
   min-height: 100dvh;
   overflow: hidden;
   background:
@@ -78,7 +79,6 @@ button { cursor: pointer; }
 }
 .env-kicker,
 .env-names,
-.env-ml,
 .env-date,
 .env-hint,
 .envelope-stage {
@@ -131,7 +131,7 @@ button { cursor: pointer; }
 .kicker { color: var(--gold); }
 .env-names {
   margin: 10px 0 0;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Bodoni Moda", "Times New Roman", serif;
   font-size: clamp(3.2rem, 10vw, 5.6rem);
   font-weight: 500;
   line-height: 0.9;
@@ -148,17 +148,6 @@ button { cursor: pointer; }
   color: var(--wine);
   font-size: clamp(2.4rem, 6vw, 3.6rem);
   line-height: 0.8;
-}
-.env-ml,
-.ml {
-  font-family: "Noto Serif Malayalam", serif;
-  line-height: 1.7;
-}
-.env-ml {
-  margin: 12px 0 0;
-  color: #f0e2bf;
-  font-size: 1rem;
-  text-align: center;
 }
 .env-date {
   margin: 8px 0 0;
@@ -268,7 +257,7 @@ button { cursor: pointer; }
   transition: transform 1.7s cubic-bezier(0.22, 1, 0.36, 1) 0.85s;
 }
 .env-letter strong {
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Bodoni Moda", "Times New Roman", serif;
   font-size: 1.55rem;
   font-weight: 600;
 }
@@ -387,16 +376,10 @@ button { cursor: pointer; }
 .hero-names { text-align: center; }
 .hero-name {
   margin: 0;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Bodoni Moda", "Times New Roman", serif;
   font-size: clamp(2.8rem, 7vw, 5.3rem);
   font-weight: 500;
   line-height: 0.92;
-}
-.hero .ml {
-  max-width: 34rem;
-  margin: 18px auto 0;
-  color: #f0e2bf;
-  font-size: 1.02rem;
 }
 .date-line {
   margin: 18px 0 0;
@@ -491,7 +474,7 @@ button { cursor: pointer; }
 }
 blockquote {
   margin: 0;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Bodoni Moda", "Times New Roman", serif;
   font-size: clamp(1.8rem, 4vw, 2.7rem);
   font-style: italic;
   font-weight: 500;
@@ -501,7 +484,7 @@ blockquote {
 blockquote cite {
   display: block;
   margin-top: 12px;
-  font-family: Manrope, sans-serif;
+  font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 0.75rem;
   font-style: normal;
   letter-spacing: 0.22em;
@@ -528,7 +511,7 @@ blockquote cite {
 .venue-card h2,
 .reply-card h2 {
   margin: 8px 0 0;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Bodoni Moda", "Times New Roman", serif;
   font-size: clamp(2.4rem, 5vw, 3.6rem);
   font-weight: 500;
   line-height: 0.95;
@@ -536,11 +519,10 @@ blockquote cite {
 }
 .venue-card h3 {
   margin: 16px 0 0;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Bodoni Moda", "Times New Roman", serif;
   font-size: 1.7rem;
   font-weight: 600;
 }
-.venue-card .ml { margin: 10px 0 0; color: var(--wine); }
 .place-detail,
 .time-line { margin: 4px 0 0; color: var(--gold); }
 .time-line.later { margin-top: 14px; }
@@ -567,7 +549,7 @@ blockquote cite {
 }
 .day-list li:last-child { border-bottom: 1px solid var(--line); }
 .day-list time {
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Bodoni Moda", "Times New Roman", serif;
   font-size: 1.45rem;
   color: var(--gold);
 }
@@ -776,7 +758,7 @@ legend { font-weight: 600; margin-bottom: 8px; }
   border-radius: 14px;
   background: #f6f1e6;
   color: var(--ink);
-  font-family: Manrope, sans-serif;
+  font-family: "Cormorant Garamond", Georgia, serif;
 }
 .footer {
   padding: 10px 20px 48px;
@@ -859,7 +841,7 @@ legend { font-weight: 600; margin-bottom: 8px; }
 }
 .countdown-band h2 {
   margin: 8px 0 0;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Bodoni Moda", "Times New Roman", serif;
   font-size: clamp(2.4rem, 5vw, 3.6rem);
   font-weight: 500;
   color: var(--emerald);
@@ -887,7 +869,7 @@ legend { font-weight: 600; margin-bottom: 8px; }
 }
 .countdown strong {
   display: block;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Bodoni Moda", "Times New Roman", serif;
   font-size: clamp(2.6rem, 6vw, 3.6rem);
   font-variant-numeric: tabular-nums;
   line-height: 1;
@@ -958,7 +940,6 @@ legend { font-weight: 600; margin-bottom: 8px; }
   }
   .hero-copy { grid-column: 2; grid-row: 2; align-self: start; text-align: left; }
   .hero-names .amp { color: var(--wine); }
-  .hero .ml { margin-left: 0; }
   .countdown { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .split { grid-template-columns: 0.86fr 1.14fr; gap: 56px; }
   .split.reverse { grid-template-columns: 1.14fr 0.86fr; }
