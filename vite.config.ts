@@ -5,7 +5,9 @@ export default defineConfig({
   base: '/rahulinvite/',
   plugins: [react()],
   server: {
+    host: '0.0.0.0',
     port: 5174,
     strictPort: true,
+    allowedHosts: true,
   },
 })
