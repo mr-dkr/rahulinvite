@@ -43,6 +43,23 @@ const photos = {
   },
 } satisfies Record<string, Photo>
 
+function TimeLabel({ value }: { value: string }) {
+  const parts = value.split(/(AM|PM)/g)
+  return (
+    <>
+      {parts.filter(Boolean).map((part, index) =>
+        part === 'AM' || part === 'PM' ? (
+          <span key={index} className="meridiem">
+            {part}
+          </span>
+        ) : (
+          <span key={index}>{part}</span>
+        ),
+      )}
+    </>
+  )
+}
+
 function CrossRule() {
   return (
     <div className="rule" aria-hidden="true">
@@ -254,7 +271,7 @@ export function Invitation() {
         </blockquote>
         <p>
           Rahul Shaji and Jovial Rose ask you to witness their Holy Matrimony
-          and to stay for the celebration that follows. Your presence and your
+          and to stay for the celebration that follows. Your presence and
           prayers are the gift they hope for.
         </p>
       </section>
@@ -264,7 +281,9 @@ export function Invitation() {
         <ol className="day-list">
           {site.schedule.map((item) => (
             <li key={item.time}>
-              <time>{item.time}</time>
+              <time>
+                <TimeLabel value={item.time} />
+              </time>
               <div>
                 <strong>{item.title}</strong>
                 {item.detail ? <span>{item.detail}</span> : null}
@@ -291,13 +310,14 @@ export function Invitation() {
           <PhotoButton photo={photos.embrace} onOpen={setActive} />
           <Tilt className="venue-card">
             <p className="kicker">Holy Matrimony</p>
-            <h2>The vows</h2>
+            <h2>The Vows</h2>
             <h3>{site.church.name}</h3>
-            <p className="time-line">{site.wedding.churchTime}</p>
-            <p className="time-note">Church</p>
             <address>{site.church.address}</address>
+            <p className="time-line">
+              <TimeLabel value={site.wedding.churchTime} />
+            </p>
             <p>
-              The marriage will be solemnised in the parish church at
+              The marriage will be D.V. solemnised in the parish church at
               Thodupuzha, where family and friends gather for the blessing.
             </p>
             <div className="venue-actions">
@@ -343,12 +363,12 @@ export function Invitation() {
             <h2>The celebration</h2>
             <h3>{site.reception.name}</h3>
             <p className="place-detail">{site.reception.detail}</p>
-            <p className="time-line">{site.wedding.receptionTime}</p>
-            <p className="time-note">Wedding</p>
-            <address>{site.reception.address}</address>
+            <p className="time-line">
+              <TimeLabel value={site.wedding.receptionTime} />
+            </p>
             <p>
-              After the church blessing, the celebration continues at
-              Jacob's Convention Centre in Pandappilly.
+              The celebration will continue after the church blessing at
+              Jacob's Entertainments and Convention Centre.
             </p>
             <div className="venue-actions">
               <a
@@ -377,7 +397,7 @@ export function Invitation() {
             {openMap === 'reception' && (
               <iframe
                 className="map"
-                title="Map of Jacob's Convention Centre, Pandappilly"
+                title="Map of Jacob's Entertainments and Convention Centre, Pandappilly"
                 src={mapsEmbed(site.reception.latitude, site.reception.longitude)}
                 loading="lazy"
               />
@@ -397,7 +417,6 @@ export function Invitation() {
       <footer className="footer">
         <p className="script-line small">With love</p>
         <p>Rahul Shaji & Jovial Rose</p>
-        <p className="footer-places">Thodupuzha · Muvattupuzha</p>
       </footer>
 
       {active && (

@@ -43,11 +43,11 @@ button { cursor: pointer; }
   justify-content: center;
   padding: 28px 20px 36px;
   overflow: hidden;
-  color: #f6f1e7;
+  color: #3a2a22;
   background:
-    radial-gradient(circle at 14% 16%, rgba(176, 137, 72, 0.2), transparent 26%),
-    radial-gradient(circle at 86% 84%, rgba(109, 32, 48, 0.34), transparent 32%),
-    radial-gradient(ellipse at 50% 0%, #2c6d58 0%, #12352c 46%, #071612 100%);
+    radial-gradient(circle at 16% 12%, rgba(244, 196, 160, 0.7), transparent 32%),
+    radial-gradient(circle at 86% 86%, rgba(196, 140, 96, 0.28), transparent 34%),
+    radial-gradient(ellipse at 50% 0%, #fbf3ea 0%, #f4e2d0 46%, #e8cbb3 100%);
 }
 .envelope-screen.is-opening {
   pointer-events: none;
@@ -58,7 +58,7 @@ button { cursor: pointer; }
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  color: #e7d7b0;
+  color: #a07848;
   background-image:
     radial-gradient(circle at 30% 40%, rgba(231, 215, 176, 0.22) 0 1px, transparent 1.5px),
     radial-gradient(circle at 70% 65%, rgba(231, 215, 176, 0.14) 0 1px, transparent 1.5px);
@@ -88,8 +88,8 @@ button { cursor: pointer; }
 .envelope-frame {
   position: absolute;
   inset: 18px;
-  border: 1px solid rgba(231, 215, 176, 0.5);
-  box-shadow: inset 0 0 0 8px rgba(231, 215, 176, 0.16);
+  border: 1px solid rgba(138, 98, 50, 0.4);
+  box-shadow: inset 0 0 0 8px rgba(138, 98, 50, 0.08);
   pointer-events: none;
 }
 .envelope-frame::before,
@@ -98,7 +98,7 @@ button { cursor: pointer; }
   position: absolute;
   width: 18px;
   height: 18px;
-  border: 1px solid var(--gold-soft);
+  border: 1px solid #a07848;
 }
 .envelope-frame::before { top: 8px; left: 8px; border-right: 0; border-bottom: 0; }
 .envelope-frame::after { right: 8px; bottom: 8px; border-left: 0; border-top: 0; }
@@ -127,7 +127,7 @@ button { cursor: pointer; }
   letter-spacing: 0.38em;
   text-transform: uppercase;
 }
-.env-kicker { color: var(--gold-soft); }
+.env-kicker { color: #8a6232; }
 .kicker { color: var(--gold); }
 .env-names {
   margin: 10px 0 0;
@@ -141,8 +141,8 @@ button { cursor: pointer; }
 .amp {
   font-family: "Great Vibes", cursive;
   font-style: normal;
-  color: var(--gold-soft);
 }
+.env-names em { color: #9a7040; }
 .amp {
   margin: 0;
   color: var(--wine);
@@ -154,7 +154,7 @@ button { cursor: pointer; }
   letter-spacing: 0.2em;
   text-transform: uppercase;
   font-size: 0.72rem;
-  color: var(--gold-soft);
+  color: #8a6232;
 }
 .open-burst {
   position: absolute;
@@ -180,7 +180,7 @@ button { cursor: pointer; }
   letter-spacing: 0.22em;
   text-transform: uppercase;
   font-size: 0.72rem;
-  color: rgba(246, 241, 231, 0.78);
+  color: rgba(58, 42, 34, 0.72);
   animation: hint 1.8s ease-in-out infinite;
 }
 @keyframes hint {
@@ -320,7 +320,7 @@ button { cursor: pointer; }
   content: "";
   position: absolute;
   inset: -7px;
-  border: 1px solid rgba(240, 226, 191, 0.7);
+  border: 1px solid rgba(138, 98, 50, 0.55);
   border-radius: 50%;
   animation: pulse 2.2s ease-out infinite;
 }
@@ -357,11 +357,11 @@ button { cursor: pointer; }
   flex-direction: column;
   justify-content: center;
   padding: 36px 20px 28px;
-  color: #f6f1e7;
+  color: #3a2a22;
   background:
-    radial-gradient(circle at 12% 12%, rgba(176, 137, 72, 0.18), transparent 28%),
-    radial-gradient(circle at 88% 88%, rgba(109, 32, 48, 0.28), transparent 30%),
-    radial-gradient(ellipse at 20% 0%, #245e4c, #071612 68%);
+    radial-gradient(circle at 12% 12%, rgba(244, 196, 160, 0.55), transparent 28%),
+    radial-gradient(circle at 88% 88%, rgba(176, 120, 80, 0.22), transparent 30%),
+    radial-gradient(ellipse at 20% 0%, #f8efe6, #e7cbb4 68%);
 }
 .hero-card,
 .scroll-cue { position: relative; z-index: 1; }
@@ -385,7 +385,7 @@ button { cursor: pointer; }
   margin: 18px 0 0;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--gold-soft);
+  color: #8a6232;
   font-size: 0.82rem;
 }
 .hero-frame,
@@ -436,7 +436,7 @@ button { cursor: pointer; }
 .scroll-cue {
   align-self: center;
   margin-top: 26px;
-  color: var(--gold-soft);
+  color: #8a6232;
   font-size: 0.72rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -541,7 +541,7 @@ blockquote cite {
 }
 .day-list li {
   display: grid;
-  grid-template-columns: minmax(7.2rem, 11rem) 1fr;
+  grid-template-columns: auto 1fr;
   gap: 18px;
   align-items: baseline;
   padding: 16px 0;
@@ -550,8 +550,26 @@ blockquote cite {
 .day-list li:last-child { border-bottom: 1px solid var(--line); }
 .day-list time {
   font-family: "Bodoni Moda", "Times New Roman", serif;
-  font-size: 1.45rem;
+  font-size: 1.28rem;
+  line-height: 1;
+  white-space: nowrap;
   color: var(--gold);
+}
+.day-list time span {
+  display: inline;
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.meridiem {
+  font-size: 0.58em;
+  letter-spacing: 0.04em;
+  margin-left: 0.14em;
+  vertical-align: 0.32em;
+}
+.time-line {
+  white-space: nowrap;
 }
 .day-list strong {
   display: block;
