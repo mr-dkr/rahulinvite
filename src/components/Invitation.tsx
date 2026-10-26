@@ -355,20 +355,20 @@ export function Invitation() {
         <PhotoButton photo={photos.walk} className="band-photo" onOpen={setActive} />
         <p>Rahul & Jovial</p>
       </section>
+      <p className="band-caption">
+        The celebration will continue after the church blessing at Jacob's
+        Entertainments and Convention Centre.
+      </p>
 
       <section ref={reception.ref} className={`section ${reception.className}`}>
         <div className="split reverse">
           <Tilt className="venue-card">
             <p className="kicker">Reception</p>
-            <h2>The celebration</h2>
+            <h2>The Celebration</h2>
             <h3>{site.reception.name}</h3>
             <p className="place-detail">{site.reception.detail}</p>
             <p className="time-line">
               <TimeLabel value={site.wedding.receptionTime} />
-            </p>
-            <p>
-              The celebration will continue after the church blessing at
-              Jacob's Entertainments and Convention Centre.
             </p>
             <div className="venue-actions">
               <a

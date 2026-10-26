@@ -525,6 +525,14 @@ blockquote cite {
 }
 .place-detail,
 .time-line { margin: 4px 0 0; color: var(--gold); }
+.time-line {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.45rem;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+  line-height: 1;
+  white-space: nowrap;
+}
 .time-line.later { margin-top: 14px; }
 .time-note {
   margin: 2px 0 0;
@@ -542,7 +550,8 @@ blockquote cite {
 .day-list li {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 18px;
+  column-gap: 14px;
+  row-gap: 4px;
   align-items: baseline;
   padding: 16px 0;
   border-top: 1px solid var(--line);
@@ -565,28 +574,29 @@ blockquote cite {
 .day-list time .meridiem,
 .time-line .meridiem {
   display: inline;
-  margin: 0 0 0 0.08em;
+  margin: 0 0 0 0.15em;
   color: inherit;
-  font-size: 0.45em;
+  font-size: 0.72em;
   font-weight: 500;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.02em;
   line-height: 1;
-  vertical-align: 0.7em;
+  vertical-align: baseline;
 }
-.time-line {
-  white-space: nowrap;
-}
+.day-list li > div { display: contents; }
 .day-list strong {
   display: block;
   font-weight: 600;
   color: var(--ink);
+  white-space: nowrap;
 }
 .day-list span {
   display: block;
+  grid-column: 1 / -1;
   margin-top: 2px;
   color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.45;
+  font-size: clamp(0.78rem, 3.5vw, 0.95rem);
+  line-height: 1.35;
+  white-space: nowrap;
 }
 .venue-card address {
   margin-top: 8px;
@@ -624,6 +634,13 @@ blockquote cite {
   font-family: "Great Vibes", cursive;
   font-size: clamp(2rem, 5vw, 3.2rem);
   text-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+.band-caption {
+  width: min(720px, calc(100% - 40px));
+  margin: -6px auto 18px;
+  text-align: center;
+  color: var(--muted);
+  line-height: 1.6;
 }
 .closing { text-align: center; padding-top: 8px; padding-bottom: 8px; }
 .script-line {
