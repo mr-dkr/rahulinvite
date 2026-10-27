@@ -385,12 +385,13 @@ button { cursor: pointer; }
 }
 .date-line {
   margin: 22px 0 0;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #111;
-  font-size: clamp(1.2rem, 4.8vw, 1.65rem);
+  font-size: clamp(1rem, 4.2vw, 1.55rem);
   font-weight: 600;
-  line-height: 1.35;
+  line-height: 1;
+  white-space: nowrap;
   font-variant-numeric: lining-nums;
   font-feature-settings: "lnum" 1;
 }
@@ -900,11 +901,12 @@ legend { font-weight: 600; margin-bottom: 8px; }
 .countdown-date {
   margin: 14px 0 0;
   color: #111;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  font-size: clamp(1.05rem, 4vw, 1.35rem);
+  font-size: clamp(1rem, 3.6vw, 1.35rem);
   font-weight: 600;
-  line-height: 1.35;
+  line-height: 1;
+  white-space: nowrap;
   font-variant-numeric: lining-nums;
   font-feature-settings: "lnum" 1;
 }
