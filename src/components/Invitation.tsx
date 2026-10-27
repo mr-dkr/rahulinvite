@@ -317,8 +317,8 @@ export function Invitation() {
               <TimeLabel value={site.wedding.churchTime} />
             </p>
             <p>
-              The marriage will be D.V. solemnised in the parish church at
-              Thodupuzha, where family and friends gather for the blessing.
+              God willing, the holy matrimony will be solemnized at the Parish
+              Church, Thodupuzha, in the presence of beloved family and friends.
             </p>
             <div className="venue-actions">
               <a
