@@ -270,9 +270,9 @@ export function Invitation() {
           <cite>Mark 10:9</cite>
         </blockquote>
         <p>
-          Rahul Shaji and Jovial Rose ask you to witness their Holy Matrimony
-          and to stay for the celebration that follows. Your presence and
-          prayers are the gift they hope for.
+          Rahul and Jovial invite you to witness two hearts becoming one under
+          God’s grace. Your presence and prayers would bless the beginning of
+          their forever.
         </p>
       </section>
 
@@ -356,8 +356,9 @@ export function Invitation() {
         <p>Rahul & Jovial</p>
       </section>
       <p className="band-caption">
-        The celebration will continue after the church blessing at Jacob's
-        Entertainments and Convention Centre.
+        As the church bells fade, the celebration carries on— at Jacob's
+        Entertainments and Convention Centre, where more beautiful memories
+        are awaiting.
       </p>
 
       <section ref={reception.ref} className={`section ${reception.className}`}>

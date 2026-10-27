@@ -14,7 +14,7 @@ export const site = {
     dateISO: '2027-01-09T15:15:00+05:30',
     dateDisplay: 'Saturday, 9 January 2027',
     churchTime: '3:15 PM',
-    receptionTime: '6:30 PM – 9:30 PM',
+    receptionTime: '6:00 PM – 9:30 PM',
   },
   schedule: [
     {
@@ -23,7 +23,7 @@ export const site = {
       detail: "St. Sebastian's Forane Church, Thodupuzha",
     },
     {
-      time: '6:30 PM – 9:30 PM',
+      time: '6:00 PM – 9:30 PM',
       title: 'Wedding',
       detail: "Jacob's Entertainments and Convention Centre",
     },

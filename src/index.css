@@ -382,11 +382,13 @@ button { cursor: pointer; }
   line-height: 0.92;
 }
 .date-line {
-  margin: 18px 0 0;
-  letter-spacing: 0.16em;
+  margin: 22px 0 0;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #8a6232;
-  font-size: 0.82rem;
+  color: #111;
+  font-size: clamp(1.2rem, 4.8vw, 1.65rem);
+  font-weight: 600;
+  line-height: 1.35;
 }
 .hero-frame,
 .photo-btn,
@@ -892,11 +894,13 @@ legend { font-weight: 600; margin-bottom: 8px; }
   color: var(--emerald);
 }
 .countdown-date {
-  margin: 12px 0 0;
-  color: var(--gold);
-  letter-spacing: 0.16em;
+  margin: 14px 0 0;
+  color: #111;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-size: 0.78rem;
+  font-size: clamp(1.05rem, 4vw, 1.35rem);
+  font-weight: 600;
+  line-height: 1.35;
 }
 .countdown {
   display: grid;
