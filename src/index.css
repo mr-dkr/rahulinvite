@@ -155,6 +155,8 @@ button { cursor: pointer; }
   text-transform: uppercase;
   font-size: 0.72rem;
   color: #8a6232;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
 }
 .open-burst {
   position: absolute;
@@ -389,6 +391,8 @@ button { cursor: pointer; }
   font-size: clamp(1.2rem, 4.8vw, 1.65rem);
   font-weight: 600;
   line-height: 1.35;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
 }
 .hero-frame,
 .photo-btn,
@@ -901,6 +905,8 @@ legend { font-weight: 600; margin-bottom: 8px; }
   font-size: clamp(1.05rem, 4vw, 1.35rem);
   font-weight: 600;
   line-height: 1.35;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
 }
 .countdown {
   display: grid;
