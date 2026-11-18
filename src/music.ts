@@ -1,4 +1,4 @@
-const source = `${import.meta.env.BASE_URL}music/ishq-sufiyana.mp3`
+const source = `${import.meta.env.BASE_URL}music/eternally-yours.mp3`
 
 let track: HTMLAudioElement | null = null
 
