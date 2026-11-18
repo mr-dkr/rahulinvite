@@ -3,7 +3,7 @@ const asset = (path: string) =>
 
 /**
  * Venue names and addresses come from the location screenshots.
- * The ceremony is 3:15 PM on Saturday, 9 January 2027.
+ * The ceremony is 3:45 PM on Saturday, 9 January 2027.
  */
 export const site = {
   couple: {
@@ -11,14 +11,14 @@ export const site = {
     bride: 'Jovial Rose',
   },
   wedding: {
-    dateISO: '2027-01-09T15:15:00+05:30',
+    dateISO: '2027-01-09T15:45:00+05:30',
     dateDisplay: 'Saturday, 9 January 2027',
-    churchTime: '3:15 PM',
+    churchTime: '3:45 PM',
     receptionTime: '6:30 PM – 9:30 PM',
   },
   schedule: [
     {
-      time: '3:15 PM',
+      time: '3:45 PM',
       title: 'Church',
       detail: "St. Sebastian's Forane Church, Thodupuzha",
     },
