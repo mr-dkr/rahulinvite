@@ -155,6 +155,8 @@ button { cursor: pointer; }
   text-transform: uppercase;
   font-size: 0.72rem;
   color: #8a6232;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
 }
 .open-burst {
   position: absolute;
@@ -320,7 +322,7 @@ button { cursor: pointer; }
   content: "";
   position: absolute;
   inset: -7px;
-  border: 1px solid rgba(138, 98, 50, 0.55);
+  border: 1px solid rgba(212, 176, 106, 0.8);
   border-radius: 50%;
   animation: pulse 2.2s ease-out infinite;
 }
@@ -382,11 +384,16 @@ button { cursor: pointer; }
   line-height: 0.92;
 }
 .date-line {
-  margin: 18px 0 0;
-  letter-spacing: 0.16em;
+  margin: 22px 0 0;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #8a6232;
-  font-size: 0.82rem;
+  color: #111;
+  font-size: clamp(1rem, 4.2vw, 1.55rem);
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
 }
 .hero-frame,
 .photo-btn,
@@ -892,11 +899,16 @@ legend { font-weight: 600; margin-bottom: 8px; }
   color: var(--emerald);
 }
 .countdown-date {
-  margin: 12px 0 0;
-  color: var(--gold);
-  letter-spacing: 0.16em;
+  margin: 14px 0 0;
+  color: #111;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  font-size: 0.78rem;
+  font-size: clamp(1rem, 3.6vw, 1.35rem);
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
 }
 .countdown {
   display: grid;

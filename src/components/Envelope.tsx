@@ -28,14 +28,23 @@ function SealMark() {
           <stop offset="48%" stopColor="#6d2030" />
           <stop offset="100%" stopColor="#3d1018" />
         </radialGradient>
+        <linearGradient id="gilt" x1="18%" y1="6%" x2="86%" y2="96%">
+          <stop offset="0%" stopColor="#f8e7bc" />
+          <stop offset="42%" stopColor="#d4b06a" />
+          <stop offset="78%" stopColor="#a67c3d" />
+          <stop offset="100%" stopColor="#f0d48a" />
+        </linearGradient>
       </defs>
       <path
         d="M44 8c7 1 11 6 16 6 6 0 10 5 12 10 3 6 8 8 8 14 0 7-4 11-4 17s5 10 2 16c-3 6-9 7-14 10-5 3-8 9-16 9s-11-6-16-9c-5-3-11-4-14-10-3-6 2-10 2-16s-4-10-4-17c0-6 5-8 8-14 2-5 6-10 12-10 5 0 9-5 14-6z"
         fill="url(#wax)"
+        stroke="url(#gilt)"
+        strokeWidth="2.4"
+        strokeLinejoin="round"
       />
       <ellipse cx="34" cy="28" rx="10" ry="6" fill="#fff4e4" opacity="0.28" />
-      <circle cx="44" cy="46" r="24" fill="none" stroke="#f0e2bf" strokeWidth="1.3" />
-      <circle cx="44" cy="46" r="19" fill="none" stroke="#f0e2bf" strokeWidth="0.6" />
+      <circle cx="44" cy="46" r="24" fill="none" stroke="#e8c98a" strokeWidth="1.45" />
+      <circle cx="44" cy="46" r="19" fill="none" stroke="#f3d9a0" strokeWidth="0.7" />
       <path
         d="M44 28 v7 M40.5 31.5 h7"
         stroke="#f8f1e4"
